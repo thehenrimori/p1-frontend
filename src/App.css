@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.home-page {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(167, 245, 21, 0.377), rgba(174, 245, 81, 0.431), rgba(238, 243, 233, 0.582)), linear-gradient(to left, rgb(141, 141, 141), rgba(103, 155, 35, 0), rgba(179, 253, 145, 0.404)), url("https://wallpapersfull.com/wallpapers/2019/verde-e-branco-wallpaper-12381.jpg");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.slogan{
+  font-size: 64px;
+  font-family: 'Poppins', sans-serif;
+  color:rgb(7, 87, 7);
+}
+.botao{
+  position: absolute;
+  right: 48%;
+  bottom: 35%;
+  text-decoration: none;
+  padding: 30px;
+  background-color: rgba(187, 178, 209, 0.972);
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  font-family: "Roboto";
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.botao1{
+  position: absolute;
+  right: 48%;
+  bottom: 25%;
+  text-decoration: none;
+  padding: 30px;
+  background-color: rgb(94, 121, 243);
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  font-family: "Roboto";
+
+}
+
+
+.preco{
+  position: relative;
+  top: 90%;
+  left: 200px;
+  font-family: "Roboto";
+  font-size: 28px;
+
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+}
+ 
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-left: 10px solid #000000;
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(190, 36, 36, 0.164);
+  padding: 30px;
+  margin: 20px;
+  width: 500px;
+  transition: all 0.3s ease-out;
 }
