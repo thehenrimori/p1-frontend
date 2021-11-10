@@ -15,6 +15,7 @@
 }
 
 
+
 .slogan{
   font-size: 64px;
   font-family: 'Poppins', sans-serif;
@@ -23,7 +24,7 @@
 .botao{
   position: absolute;
   right: 48%;
-  bottom: 35%;
+  bottom: 30%;
   text-decoration: none;
   padding: 30px;
   background-color: rgba(187, 178, 209, 0.972);
@@ -37,7 +38,7 @@
 .botao1{
   position: absolute;
   right: 48%;
-  bottom: 25%;
+  bottom: 20%;
   text-decoration: none;
   padding: 30px;
   background-color: rgb(94, 121, 243);
@@ -51,7 +52,7 @@
 
 .preco{
   position: relative;
-  top: 90%;
+  top: 100%;
   left: 200px;
   font-family: "Roboto";
   font-size: 28px;

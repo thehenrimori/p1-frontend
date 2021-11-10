@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import api from "../servicos/api"
+import Headers from "../Headers";
 
 function PadraoAlbuns(){
 
@@ -12,17 +13,21 @@ function PadraoAlbuns(){
     },[]);
     console.log(albuns);
     return(
-    <div className="home-page">
-    <div className="conteudo">
-        <div className="row"> {
-            albuns.map(album=>  {
-                return (
-                    <div className="card text-white bg-primary mb-3" key={album.id} >
-                    <div className="card-header">{album.nome}</div>
-                    <div className="card-body">
-                      <h5 className="card-title">{album.nota}</h5>
-                      <p className="card-text">{album.tipo}</p>
-                    </div>
+    <div>
+        <div>
+         <Headers />
+         </div>
+            <div className="home-page">
+                <div className="conteudo">
+                <div className="row"> {
+                    albuns.map(album=>  {
+                    return (
+                        <div className="card text-white bg-primary mb-3" key={album.id} >
+                        <div className="card-header">{album.nome}</div>
+                        <div className="card-body">
+                         <h5 className="card-title">{album.nota}</h5>
+                        <p className="card-text">{album.tipo}</p>
+                     </div>
                     </div>
 
                 )
@@ -32,7 +37,7 @@ function PadraoAlbuns(){
         </div>
         </div>
         </div>
-      
+    </div>
     )
 };
 

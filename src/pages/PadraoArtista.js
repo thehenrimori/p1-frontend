@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import api from "../servicos/api"
+import Headers from "../Headers";
 
 function PadraoArtista(){
 
@@ -12,11 +13,15 @@ function PadraoArtista(){
     },[]);
     console.log(artistas);
     return(
-    <div className="home-page">
-    <div className="conteudo"></div>
-        <div className="row"> {
-            artistas.map(artista=>  {
-                return (
+     <div>  
+         <div>
+         <Headers />
+         </div>
+        <div className="home-page">
+            <div className="conteudo"></div>
+            <div className="row"> {
+                 artistas.map(artista=>  {
+                    return (
                     <div className="card text-white bg-success mb-3" key={artista.id}>
                     <div className="card-header">{artista.nome}</div>
                     <div className="card-body">
@@ -29,9 +34,9 @@ function PadraoArtista(){
             })
             
         }
-        
+        </div> 
         </div>
-        </div>
+    </div>
         
     )
 };
